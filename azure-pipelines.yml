@@ -4,7 +4,7 @@ trigger:
 pool: TKS-AGENT
 
 stages:
-  - stage: "Terraform Install"
+  - stage: "Terraform"
     jobs:
     - job: "terraforminstall"
       steps:
