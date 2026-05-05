@@ -1,0 +1,13 @@
+trigger:
+  - main
+
+pool: TKS-AGENT
+
+stages:
+  - stage: "Terraform Install"
+    jobs:
+    - job: "terraforminstall"
+      steps:
+      - task: TerraformInstaller@1
+        inputs:
+          terraformVersion: 'latest'
